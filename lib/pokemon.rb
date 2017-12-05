@@ -13,6 +13,6 @@ class Pokemon
       found = db.execute("SELECT * FROM pokemon WHERE id=?", id).flatten
       binding.pry
       test = self.new(id=found[0], name=found[1], type = found[2])
-      
+
     end
 end
